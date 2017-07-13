@@ -1,9 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ylx.zbardemo.activity.ZxingActivity">
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    tools:context=".activity.ZxingActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_fifty"
+        android:background="@color/blue_50"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/topLeft"
+            android:layout_width="@dimen/dp_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="0.22"
+            android:clickable="true"
+            android:drawableLeft="@drawable/selector_left_top"
+            android:drawablePadding="@dimen/dp_five"
+            android:gravity="center_vertical"
+            android:onClick="onBack"
+            android:paddingLeft="@dimen/dp_fifteen"
+            android:text="@string/topBack"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_sixteen" />
+
+        <TextView
+            android:id="@+id/topTitle"
+            android:layout_width="@dimen/dp_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="0.56"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_eighteen"
+            android:text="@string/scanCode" />
+
+        <TextView
+            android:id="@+id/topRight"
+            android:layout_width="@dimen/dp_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="0.22"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_sixteen"
+            android:text="@string/pictures" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/transparent_60"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent_60"/>
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp">
+            <FrameLayout
+                android:id="@+id/previewLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <RelativeLayout
+                android:id="@+id/scanLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:background="@drawable/scan_view_active">
+
+                <ImageView
+                    android:id="@+id/scan_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/scan_line_active" />
+
+            </RelativeLayout>
+        </FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent_60"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/hintText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/transparent_60"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:text="@string/scanHintText"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_60">
+
+
+        <TextView
+            android:id="@+id/continueScan"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_button_continuescan"
+            android:gravity="center"
+            android:text="@string/continueScan"
+            android:textColor="@color/selector_login_button_text"
+            android:textSize="@dimen/sp_eighteen"
+            android:visibility="visible" />
+        <TextView
+            android:id="@+id/scanContent"
+            android:layout_above="@id/continueScan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            tools:text="111"/>
+    </RelativeLayout>
+</LinearLayout>

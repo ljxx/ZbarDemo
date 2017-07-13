@@ -3,4 +3,20 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!-- 透明色-->
+    <color name="transparent">#00000000</color>
+    <!-- 半明色-->
+    <color name="transparent_60">#60000000</color>
+
+    <!-- 白色-->
+    <color name="white">#FFFFFF</color>
+
+    <!-- 灰色 -->
+    <color name="gray_30">#b3b3b3</color>
+
+    <!-- 蓝色 -->
+    <color name="blue_50">#2d5580</color>
+    <!-- 蓝色 -->
+    <color name="blue_79">#0b2036</color>
 </resources>

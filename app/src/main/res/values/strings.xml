@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ZbarDemo</string>
+
+    <!-- 标题-->
+    <string name="topBack">返回</string>
+    <string name="scanCode">扫码</string>
+    <string name="pictures">相册</string>
+
+    <string name="scanHintText">将二维码/条码放入框内，即可自动扫描</string>
+    <string name="continueScan">继续扫描</string>
 </resources>

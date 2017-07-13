@@ -1,0 +1,16 @@
+<resources>
+    <!--文字大小-->
+    <dimen name="sp_thirteen">13sp</dimen>
+    <dimen name="sp_sixteen">16sp</dimen>
+    <dimen name="sp_eighteen">18sp</dimen>
+    <!--控件大小-->
+    <dimen name="dp_zero">0dp</dimen>
+    <dimen name="dp_one">1dp</dimen>
+    <dimen name="dp_five">5dp</dimen>
+    <dimen name="dp_ten">10dp</dimen>
+    <dimen name="dp_fifteen">15dp</dimen>
+    <dimen name="dp_twenty">20dp</dimen>
+    <dimen name="dp_fortythree">43dp</dimen>
+    <dimen name="dp_fortyfive">45dp</dimen>
+    <dimen name="dp_fifty">50dp</dimen>
+</resources>
